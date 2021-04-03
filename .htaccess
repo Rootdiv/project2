@@ -1,0 +1,2 @@
+ErrorDocument 403 https://%{HTTP_HOST}/project/project2/components/err403.php
+ErrorDocument 404 https://%{HTTP_HOST}/project/project2/components/err404.php

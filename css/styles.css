@@ -1,0 +1,569 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body, input, select, textarea, button{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+.box{
+  padding: 20px;
+}
+
+.box-small{
+  padding: 10px;
+}
+
+.bg-fix{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.one-third{
+  width: 33.3%;
+}
+
+.flex-box{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline
+}
+
+.half{
+  width: 50%;
+}
+
+.go-top{
+  opacity: 0;
+  transition: opacity 1500ms;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: blue;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  z-index: 10;
+}
+
+.container{
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.top-nav{
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .logo{
+  display: flex;
+  height: 85px;
+  padding-left: 100px;
+  background: url('../img/web.png') no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.logo div:first-child{
+  font-size: 30pt;
+  color: dodgerblue;
+}
+
+.logo div:last-child{
+  font-size: 30pt;
+  margin-left: 10px;
+  color: deeppink;
+}
+
+.to-end{
+  margin: 0 0 0 auto;
+}
+
+.top-nav ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.top-nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.top-nav ul li a{
+  color: black;
+}
+
+.top-nav ul li:first-child a{
+  color: dodgerblue;
+}
+
+.banner{
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 750px;
+}
+
+.banner::after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Слайдер*/
+.slider-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slides > li{
+  flex-shrink: 0;
+}
+
+.slider-nav{
+  width: 62px;
+  height: 62px;
+  z-index: 2;
+  border: 1px solid white;
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slider-prev{
+  top: 50%;
+  left: 50px;
+  background-image: url('../img/arrow.png');
+  background-size: 18px;
+  transform: rotate(180deg);
+}
+
+.slider-next{
+  top: 50%;
+  right: 50px;
+  background-image: url('../img/arrow.png');
+  background-size: 18px;
+}
+
+.title{
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.title > p:first-child{
+  font-size: 25pt;
+  text-transform: uppercase;
+}
+
+.title > p:last-child{
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+.button{
+  text-decoration: none !important;
+  border: 1px white solid;
+  font-size: 15px;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0 auto;
+  top: 60%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.contents{
+  padding: 30px 12.7%;
+}
+
+.content{
+  text-align: center;
+}
+
+.block{
+  align-items: center;
+  justify-content: center;
+}
+
+.block .content:first-child img{
+  width: 80px;
+}
+
+.block .content p{
+  color: dodgerblue;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.block .content div:last-child{
+  font-size: 14px;
+  line-height: 2;
+}
+
+/*Заголовок блоков*/
+.title-block{
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-size: 30px;
+  transform: scale(1, 1.1);
+}
+
+.line{
+  width: 70px;
+  height: 3px;
+  background-color: deeppink;
+  margin: -20px 0 30px;
+}
+
+/*На главной и странице новостей*/
+.message-line{
+  background-color: dodgerblue;
+  color: white;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.message-line > a{
+  text-decoration: none !important;
+  border: 1px white solid;
+  font-size: 15px;
+  padding: 15px 40px;
+}
+
+.last-working div:last-child{
+  display: flex;
+}
+
+.last-working img{
+  min-width: 30%;
+  border: 2px solid deeppink;
+  margin-right: 30px;
+}
+
+.stat-line{
+  background-color: dodgerblue;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-line h1{
+  margin: 2px 0;
+}
+
+.stat-line p{
+  font-size: 25px;
+  margin: 10px -10px;
+}
+
+.stat-line img{
+  width: 50px;
+}
+
+/*Новости на главной и странице новостей*/
+.space{
+  padding: 15px;
+}
+
+.news-block{
+  padding-bottom: 50px;
+}
+
+.news1-img{
+  width: 400px;
+  background-image: url('../img/news1.jpg');
+}
+
+.news2-img{
+  width: 400px;
+  background-image: url('../img/news2.jpg');
+}
+
+.news{
+  font-size: 12px;
+  line-height: 1.7;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 15px;
+}
+
+.news a{
+  color: dodgerblue;
+  text-transform: uppercase;
+  float: right;
+  padding: 30px 20px 10px 0;
+}
+
+
+/*Сообщение на главной*/
+.message{
+  background-color: whitesmoke;
+}
+
+.message > div:last-child{
+  padding: 10px 0 20px;
+}
+
+.send{
+  width: 50%;
+  margin-right: 50px;
+}
+
+.input-text{
+  border: 3px solid dodgerblue;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+input[type='submit']{
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.textarea{
+  width: 50%;
+}
+
+textarea{
+  border: 3px solid dodgerblue;
+  width: 100%;
+  height: 140px;
+  margin-bottom: 10px;
+  padding: 4px;
+  resize: none;
+}
+
+.footer{
+  background-color: #161616;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.footer a{
+  color: white;
+}
+
+.footer-about{
+  width: 250px;
+}
+
+.footer-news{
+  width: 250px;
+}
+
+.contacts{
+  width: 220px;
+  padding-top: 20px;
+}
+
+.footer-about p:first-child, .footer-news p:first-child{
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.footer img{
+  width: 18px;
+  vertical-align: middle;
+}
+
+.contacts a:first-child{
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.copy-footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  height: 80px;
+  line-height: 80px;
+  font-size: 10px;
+}
+
+/*Новости*/
+.news_1{
+  background-image: url('../img/top2.jpg');
+}
+
+.news_2{
+  background-image: url('../img/top3.jpg');
+}
+
+.news-container{
+  background-color: whitesmoke;
+}
+
+.news-message{
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*Страница контакты*/
+.cont{
+  background-image: url('../img/top1.jpg');
+}
+
+.cont .title > p:first-child{
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.cont .title > p:nth-child(2){
+  font-size: 20px;
+  margin-top: -40px;
+}
+
+.cont .title > p:last-child{
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: -12px;
+}
+
+.contact-img1{
+  background-image: url('../img/woman.jpg');
+  width: 70%;
+}
+
+.contact-img2{
+  background-image: url('../img/man.jpg');
+  width: 70%;
+}
+
+.contact{
+  font-size: 14px;
+  line-height: 1.7;
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+}
+
+.contact > b{
+  font-size: 18px;
+}
+
+.contact > a{
+  color: dodgerblue;
+}
+
+.message-cont{
+  background-color: dodgerblue;
+  align-items: center;
+  color: white;
+}
+
+.message-contacts{
+  width: 50%;
+}
+
+.message-contacts img{
+  width: 35px;
+  filter: brightness(0) invert(1);
+}
+
+.message-contact{
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.message-contact-text{
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.message-box{
+  width: 50%;
+}
+
+.message-box > div{
+  text-transform: uppercase;
+}
+
+.message-box .input-text{
+  border: none;
+}
+
+.message-box textarea{
+  height: 150px;
+  border: none;
+}
+
+.message-box input[type='submit']{
+  background-color: hotpink;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#map{
+  height: 500px;
+}
