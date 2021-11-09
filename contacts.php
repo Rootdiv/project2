@@ -1,11 +1,11 @@
 <?php
   require_once $_SERVER['DOCUMENT_ROOT'].'/project/project2/global_pass.php';
-  require_once PROJECT_ROOT.'/components/header.inc';
+  require_once PROJECT_ROOT.'/components/header.inc.php';
 ?>
       <header>
         <div>
           <?php echo PHP_EOL;
-            require_once PROJECT_ROOT.'/components/top_nav.inc';
+            require_once PROJECT_ROOT.'/components/top_nav.inc.php';
           echo PHP_EOL ?>
           <div class="cont bg-fix">
             <div class="banner">
@@ -114,5 +114,5 @@
         </div>
       </main>
 <?php
-  require_once PROJECT_ROOT.'/components/footer.inc';
+  require_once PROJECT_ROOT.'/components/footer.inc.php';
 ?>

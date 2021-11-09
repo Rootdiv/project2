@@ -1,6 +1,6 @@
 <?php
   require_once $_SERVER['DOCUMENT_ROOT'].'/project/project2/global_pass.php';
-  require_once PROJECT_ROOT.'/components/header.inc';
+  require_once PROJECT_ROOT.'/components/header.inc.php';
   if(isset($_GET['page']) && $_GET['page'] == '1') $news = new News(1);
   elseif(isset($_GET['page']) && $_GET['page'] == '2') $news = new News(2);
   else $news = new News(1);
@@ -8,7 +8,7 @@
       <header>
         <div>
           <?php echo PHP_EOL;
-            require_once PROJECT_ROOT.'/components/top_nav.inc';
+            require_once PROJECT_ROOT.'/components/top_nav.inc.php';
           echo PHP_EOL ?>
           <div class="<?=$news->getField('news_bg')?> bg-fix">
             <div class="banner">
@@ -70,5 +70,5 @@
         </div>
       </main>
 <?php
-  require_once PROJECT_ROOT.'/components/footer.inc';
+  require_once PROJECT_ROOT.'/components/footer.inc.php';
 ?>
