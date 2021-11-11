@@ -1,57 +1,61 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-body, input, select, textarea, button{
+body,
+input,
+select,
+textarea,
+button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-*{
+* {
   box-sizing: border-box;
   outline: none;
 }
 
-.box{
+.box {
   padding: 20px;
 }
 
-.box-small{
+.box-small {
   padding: 10px;
 }
 
-.bg-fix{
+.bg-fix {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.one-third{
+.one-third {
   width: 33.3%;
 }
 
-.flex-box{
+.flex-box {
   display: flex;
 }
 
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-a:hover{
-  text-decoration: underline
+a:hover {
+  text-decoration: underline;
 }
 
-.half{
+.half {
   width: 50%;
 }
 
-.go-top{
+.go-top {
   opacity: 0;
   transition: opacity 1500ms;
   position: fixed;
@@ -68,17 +72,17 @@ a:hover{
   z-index: 10;
 }
 
-.container{
+.container {
   max-width: 1580px;
   margin: 0 auto;
 }
 
-.top-nav{
+.top-nav {
   display: flex;
   align-items: center;
 }
 
-.top-nav .logo{
+.top-nav .logo {
   display: flex;
   height: 85px;
   padding-left: 100px;
@@ -87,48 +91,48 @@ a:hover{
   align-items: center;
 }
 
-.logo div:first-child{
+.logo div:first-child {
   font-size: 30pt;
   color: dodgerblue;
 }
 
-.logo div:last-child{
+.logo div:last-child {
   font-size: 30pt;
   margin-left: 10px;
   color: deeppink;
 }
 
-.to-end{
+.to-end {
   margin: 0 0 0 auto;
 }
 
-.top-nav ul{
+.top-nav ul {
   padding: 0;
   list-style-type: none;
 }
 
-.top-nav ul li{
+.top-nav ul li {
   display: inline-block;
   padding: 0 20px;
   text-transform: uppercase;
 }
 
-.top-nav ul li a{
+.top-nav ul li a {
   color: black;
 }
 
-.top-nav ul li:first-child a{
+.top-nav ul li:first-child a {
   color: dodgerblue;
 }
 
-.banner{
+.banner {
   align-items: center;
   text-align: center;
   position: relative;
   height: 750px;
 }
 
-.banner::after{
+.banner::after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -141,18 +145,18 @@ a:hover{
 
 
 /*Слайдер*/
-.slider-container{
+.slider-container {
   position: relative;
   overflow: hidden;
 }
 
-.slider{
+.slider {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.slides{
+.slides {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
@@ -161,11 +165,11 @@ a:hover{
   list-style-type: none;
 }
 
-.slides > li{
+.slides>li {
   flex-shrink: 0;
 }
 
-.slider-nav{
+.slider-nav {
   width: 62px;
   height: 62px;
   z-index: 2;
@@ -175,7 +179,7 @@ a:hover{
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.slider-prev{
+.slider-prev {
   top: 50%;
   left: 50px;
   background-image: url('../img/arrow.png');
@@ -183,14 +187,14 @@ a:hover{
   transform: rotate(180deg);
 }
 
-.slider-next{
+.slider-next {
   top: 50%;
   right: 50px;
   background-image: url('../img/arrow.png');
   background-size: 18px;
 }
 
-.title{
+.title {
   color: white;
   position: absolute;
   top: 37%;
@@ -199,17 +203,17 @@ a:hover{
   z-index: 2;
 }
 
-.title > p:first-child{
+.title>p:first-child {
   font-size: 25pt;
   text-transform: uppercase;
 }
 
-.title > p:last-child{
+.title>p:last-child {
   font-size: 20px;
   margin-top: -25px;
 }
 
-.button{
+.button {
   text-decoration: none !important;
   border: 1px white solid;
   font-size: 15px;
@@ -225,43 +229,43 @@ a:hover{
   z-index: 2;
 }
 
-.contents{
+.contents {
   padding: 30px 12.7%;
 }
 
-.content{
+.content {
   text-align: center;
 }
 
-.block{
+.block {
   align-items: center;
   justify-content: center;
 }
 
-.block .content:first-child img{
+.block .content:first-child img {
   width: 80px;
 }
 
-.block .content p{
+.block .content p {
   color: dodgerblue;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.block .content div:last-child{
+.block .content div:last-child {
   font-size: 14px;
   line-height: 2;
 }
 
 /*Заголовок блоков*/
-.title-block{
+.title-block {
   color: dodgerblue;
   text-transform: uppercase;
   font-size: 30px;
   transform: scale(1, 1.1);
 }
 
-.line{
+.line {
   width: 70px;
   height: 3px;
   background-color: deeppink;
@@ -269,7 +273,7 @@ a:hover{
 }
 
 /*На главной и странице новостей*/
-.message-line{
+.message-line {
   background-color: dodgerblue;
   color: white;
   text-transform: uppercase;
@@ -278,24 +282,24 @@ a:hover{
   font-size: 20px;
 }
 
-.message-line > a{
+.message-line>a {
   text-decoration: none !important;
   border: 1px white solid;
   font-size: 15px;
   padding: 15px 40px;
 }
 
-.last-working div:last-child{
+.last-working div:last-child {
   display: flex;
 }
 
-.last-working img{
+.last-working img {
   min-width: 30%;
   border: 2px solid deeppink;
   margin-right: 30px;
 }
 
-.stat-line{
+.stat-line {
   background-color: dodgerblue;
   color: white;
   text-transform: uppercase;
@@ -304,39 +308,39 @@ a:hover{
   justify-content: space-between;
 }
 
-.stat-line h1{
+.stat-line h1 {
   margin: 2px 0;
 }
 
-.stat-line p{
+.stat-line p {
   font-size: 25px;
   margin: 10px -10px;
 }
 
-.stat-line img{
+.stat-line img {
   width: 50px;
 }
 
 /*Новости на главной и странице новостей*/
-.space{
+.space {
   padding: 15px;
 }
 
-.news-block{
+.news-block {
   padding-bottom: 50px;
 }
 
-.news1-img{
+.news1-img {
   width: 400px;
   background-image: url('../img/news1.jpg');
 }
 
-.news2-img{
+.news2-img {
   width: 400px;
   background-image: url('../img/news2.jpg');
 }
 
-.news{
+.news {
   font-size: 12px;
   line-height: 1.7;
   background-color: whitesmoke;
@@ -344,29 +348,28 @@ a:hover{
   padding: 15px;
 }
 
-.news a{
+.news a {
   color: dodgerblue;
   text-transform: uppercase;
   float: right;
   padding: 30px 20px 10px 0;
 }
 
-
 /*Сообщение на главной*/
-.message{
+.message {
   background-color: whitesmoke;
 }
 
-.message > div:last-child{
+.message>div:last-child {
   padding: 10px 0 20px;
 }
 
-.send{
+.send {
   width: 50%;
   margin-right: 50px;
 }
 
-.input-text{
+.input-text {
   border: 3px solid dodgerblue;
   width: 100%;
   height: 40px;
@@ -374,17 +377,17 @@ a:hover{
   padding: 4px;
 }
 
-input[type='submit']{
+input[type='submit'] {
   background: dodgerblue;
   color: white;
   cursor: pointer;
 }
 
-.textarea{
+.textarea {
   width: 50%;
 }
 
-textarea{
+textarea {
   border: 3px solid dodgerblue;
   width: 100%;
   height: 140px;
@@ -393,7 +396,7 @@ textarea{
   resize: none;
 }
 
-.footer{
+.footer {
   background-color: #161616;
   align-items: flex-start;
   justify-content: space-between;
@@ -403,43 +406,44 @@ textarea{
   line-height: 1.8;
 }
 
-.footer a{
+.footer a {
   color: white;
 }
 
-.footer-about{
+.footer-about {
   width: 250px;
 }
 
-.footer-news{
+.footer-news {
   width: 250px;
 }
 
-.contacts{
+.footer-contacts {
   width: 220px;
   padding-top: 20px;
 }
 
-.footer-about p:first-child, .footer-news p:first-child{
+.footer-about p:first-child,
+.footer-news p:first-child {
   color: dodgerblue;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: normal;
 }
 
-.footer img{
+.footer img {
   width: 18px;
   vertical-align: middle;
 }
 
-.contacts a:first-child{
+.footer-contacts a:first-child {
   color: dodgerblue;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: normal;
 }
 
-.copy-footer{
+.copy-footer {
   background-color: black;
   color: white;
   text-align: center;
@@ -450,55 +454,45 @@ textarea{
 }
 
 /*Новости*/
-.news_1{
+.news1 {
   background-image: url('../img/top2.jpg');
 }
 
-.news_2{
+.news2 {
   background-image: url('../img/top3.jpg');
 }
 
-.news-container{
+.news-container {
   background-color: whitesmoke;
 }
 
-.news-message{
+.news-message {
   font-size: 14px;
   line-height: 1.7;
 }
 
 /*Страница контакты*/
-.cont{
+.contacts {
   background-image: url('../img/top1.jpg');
 }
 
-.cont .title > p:first-child{
+.contacts .title>p:first-child {
   font-size: 42px;
   text-transform: uppercase;
 }
 
-.cont .title > p:nth-child(2){
+.contacts .title>p:nth-child(2) {
   font-size: 20px;
   margin-top: -40px;
 }
 
-.cont .title > p:last-child{
+.contacts .title>p:last-child {
   font-size: 42px;
   text-transform: uppercase;
   margin-top: -12px;
 }
 
-.contact-img1{
-  background-image: url('../img/woman.jpg');
-  width: 70%;
-}
-
-.contact-img2{
-  background-image: url('../img/man.jpg');
-  width: 70%;
-}
-
-.contact{
+.contact {
   font-size: 14px;
   line-height: 1.7;
   width: 100%;
@@ -506,64 +500,74 @@ textarea{
   padding-bottom: 40px;
 }
 
-.contact > b{
+.contact-img1 {
+  background-image: url('../img/woman.jpg');
+  width: 70%;
+}
+
+.contact-img2 {
+  background-image: url('../img/man.jpg');
+  width: 70%;
+}
+
+.contact>b {
   font-size: 18px;
 }
 
-.contact > a{
+.contact>a {
   color: dodgerblue;
 }
 
-.message-cont{
+.message-block {
   background-color: dodgerblue;
   align-items: center;
   color: white;
 }
 
-.message-contacts{
+.message-contacts {
   width: 50%;
 }
 
-.message-contacts img{
+.message-contacts img {
   width: 35px;
   filter: brightness(0) invert(1);
 }
 
-.message-contact{
+.message-contact {
   display: flex;
   align-items: center;
   padding-top: 25px;
 }
 
-.message-contact-text{
+.message-contact-text {
   margin-left: 20px;
   font-size: 14px;
 }
 
-.message-box{
+.message-box {
   width: 50%;
 }
 
-.message-box > div{
+.message-box>div {
   text-transform: uppercase;
 }
 
-.message-box .input-text{
+.message-box .input-text {
   border: none;
 }
 
-.message-box textarea{
+.message-box textarea {
   height: 150px;
   border: none;
 }
 
-.message-box input[type='submit']{
+.message-box input[type='submit'] {
   background-color: hotpink;
   height: 50px;
   font-size: 20px;
   font-weight: bold;
 }
 
-#map{
+#map {
   height: 500px;
 }

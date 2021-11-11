@@ -1,13 +1,13 @@
 <?php
-  require_once $_SERVER['DOCUMENT_ROOT'].'/project/project2/global_pass.php';
-  require_once PROJECT_ROOT.'/components/header.inc.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/project/project2/global_pass.php';
+  require_once PROJECT_ROOT . '/components/header.inc.php';
 ?>
       <header>
         <div>
           <?php echo PHP_EOL;
-            require_once PROJECT_ROOT.'/components/top_nav.inc.php';
-          echo PHP_EOL ?>
-          <div class="cont bg-fix">
+          require_once PROJECT_ROOT . '/components/top_nav.inc.php';
+          echo PHP_EOL; ?>
+          <div class="contacts bg-fix">
             <div class="banner">
               <div class="title">
                 <p>GO TO TOP</p>
@@ -20,18 +20,22 @@
       </header>
       <main>
         <div id="about" class="news-container contents">
-          <?php $about = new About(1)
-          ?><div class="title-block"><?=$about->getField('title')?></div>
-          <div class="line"><!--Линия--></div>
+        <?php $about = new About(1);
+        ?><div class="title-block"><?=$about->getField('title');?></div>
+          <div class="line">
+            <!--Линия-->
+          </div>
           <div class="news-message">
-            <?=$about->getField('text').PHP_EOL?>
+            <?=$about->getField('text') . PHP_EOL;?>
           </div>
         </div>
         <div class="contents">
           <div class="title-block">
             <p>Свяжитесь с нами</p>
           </div>
-          <div class="line"><!--Линия--></div>
+          <div class="line">
+            <!--Линия-->
+          </div>
           <div class="flex-box">
             <div class="half flex-box">
               <div class="contact-img1 bg-fix">
@@ -65,27 +69,26 @@
           </div>
         </div>
         <div class="box"></div>
-        <div class="message-cont flex-box contents">
-          <?php $global_info = new Global_info(1)
-          ?>
+        <div class="message-block flex-box contents">
+          <?php $global_info = new GlobalInfo(1);?>
           <div class="message-contacts">
             <div class="message-contact">
               <div>
-                <img src="<?=PROJECT_URL?>/img/placeholder.png" alt="Адрес" />
+                <img src="<?=PROJECT_URL;?>/img/placeholder.png" alt="Адрес" />
               </div>
-              <div class="message-contact-text"><b>Адрес:</b><br><?=$global_info->getField('adders')?></div>
+              <div class="message-contact-text"><b>Адрес:</b><br><?=$global_info->getField('adders');?></div>
             </div>
             <div class="message-contact">
               <div>
-                <img src="<?=PROJECT_URL?>/img/telephone.png" alt="Телефон" />
+                <img src="<?=PROJECT_URL;?>/img/telephone.png" alt="Телефон" />
               </div>
-              <div class="message-contact-text"><b>Телефон:</b><br><?=$global_info->getField('tel')?></div>
+              <div class="message-contact-text"><b>Телефон:</b><br><?=$global_info->getField('tel');?></div>
             </div>
             <div class="message-contact">
               <div>
-                <img src="<?=PROJECT_URL?>/img/mail.png" alt="E-mail" />
+                <img src="<?=PROJECT_URL;?>/img/mail.png" alt="E-mail" />
               </div>
-              <div class="message-contact-text"><b>E-mail:</b><br><?=$global_info->getField('email')?></div>
+              <div class="message-contact-text"><b>E-mail:</b><br><?=$global_info->getField('email');?></div>
             </div>
           </div>
           <div class="box"></div>
@@ -93,9 +96,9 @@
             <div>
               <b>Напишите нам</b>
             </div>
-            <form method="POST" action="<?=PROJECT_URL?>/message.php">
+            <form method="POST" action="<?=PROJECT_URL;?>/message.php">
               <label>
-                <input class="input-text" type="text" name="name" placeholder="ФИО">
+                <input class="input-text" type="text" name="full_name" placeholder="ФИО">
               </label>
               <label>
                 <input class="input-text" type="email" name="email" required placeholder="E-mail">
@@ -114,5 +117,5 @@
         </div>
       </main>
 <?php
-  require_once PROJECT_ROOT.'/components/footer.inc.php';
+  require_once PROJECT_ROOT . '/components/footer.inc.php';
 ?>

@@ -1,7 +1,6 @@
 <?php
-class Leads extends Unit
-{
-	public function setTable(){
-		return 'leads';
-	}
+class Leads extends Unit {
+  public function setTable() {
+    return 'leads';
+  }
 }

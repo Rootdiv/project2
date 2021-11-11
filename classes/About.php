@@ -1,7 +1,6 @@
 <?php
-class About extends Unit
-{
-	public function setTable(){
-		return 'about';
-	}
+class About extends Unit {
+  public function setTable() {
+    return 'about';
+  }
 }

@@ -1,7 +1,6 @@
 <?php
-class Works extends Unit
-{
-	public function setTable(){
-		return 'works';
-	}
+class Works extends Unit {
+  public function setTable() {
+    return 'works';
+  }
 }

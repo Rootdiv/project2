@@ -1,3 +1,2 @@
 ErrorDocument 403 /project/project2/components/err403.php
 ErrorDocument 404 /project/project2/components/err404.php
-

@@ -11,12 +11,14 @@
               <nav>
                 <ul>
                   <?php $pages = new Pages(0);
-                  foreach((new Pages(0))->getAllUnitsId() as $item){
-                  $pages = new Pages($item); echo PHP_EOL ?>
+                  foreach ((new Pages(0))->getAllUnitsId() as $item) {
+                    $pages = new Pages($item);
+                    echo PHP_EOL;?>
                   <li>
-                    <a href="<?=PROJECT_URL.$pages->getField('link')?>"><?=$pages->getField('page')?></a>
+                    <a href="<?=PROJECT_URL . $pages->getField('link');?>"><?=$pages->getField('page');?></a>
                   </li>
-                  <?php } echo PHP_EOL ?>
+                  <?php }
+                  echo PHP_EOL;?>
                 </ul>
               </nav>
             </div>
