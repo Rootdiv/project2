@@ -16,7 +16,7 @@ if (!empty($_POST['email']) && !empty($_POST['text'])) {
   $arr_fields = [];
   $arr_values = [];
   foreach ($name_columns as $columns) {
-    if ($_POST[$columns]) {
+    if (isset($_POST[$columns])) {
       $arr_fields[] = $columns;
       $arr_values[] = trim($_POST[$columns]);
     }
